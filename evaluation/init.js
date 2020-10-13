@@ -23,13 +23,18 @@ if (window.location.href.indexOf('http') !== -1) {
     spellCheckButton.onclick = () => window.open(`https://datayze.com/website-spell-checker?domain=${encodeURIComponent(window.location.href)}&parameters=&exclude=&elementtype=limit&elements=&ignored=`, '_blank');
     validateContainer.appendChild(spellCheckButton);
 
-    const developmentStrategyButton = document.createElement('button');
-    developmentStrategyButton.innerHTML = 'development strategy';
-    const developmentStrategyA = document.createElement('a');
-    developmentStrategyA.href = './development-strategy';
-    developmentStrategyA.target = '_blank';
-    developmentStrategyA.appendChild(developmentStrategyButton);
-    validateContainer.appendChild(developmentStrategyA);
+    const splitHref = window.location.href.split('.');
+    const userName = splitHref[0].split('/').filter(str => str !== '').pop();
+    const repository = splitHref[2].split('/').filter(str => str !== '').pop();
+    const repoUrl = `https://github.com/${userName}/${repository}`;
+
+    const repositoryButton = document.createElement('button');
+    repositoryButton.innerHTML = 'repository';
+    const repositoryA = document.createElement('a');
+    repositoryA.href = repoUrl;
+    repositoryA.target = '_blank';
+    repositoryA.appendChild(repositoryButton);
+    validateContainer.appendChild(repositoryA);
 
     document.body.insertBefore(validateContainer, document.body.firstChild);
   }
