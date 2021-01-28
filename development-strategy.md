@@ -1,53 +1,57 @@
-# Development Strategy
+# Todo List: Practical JavaScript
 
-> `name-of-project`
+A refactor of the Practical JavaScript Todo List
 
-write a short description of your project:
-- who would want to use it?
-- why would they want to use it?
+---
 
-## Wireframe
+## Data
 
-<!-- include a wireframe for your project in this repository, and display it here -->
-<!-- wireframe.cc is a good site for getting started with wireframes -->
+> describe the data used in your project.
+>
+> - what properties?
+> - what types?
+> - what are array entries like?
+
+---
+
+## User Story Dependencies
+
+![Story Dependency Diagram]()
+
+---
+
+## WIREFRAME
+
 ![wireframe]()
 
-## 0. Set-Up
+---
 
-__A User can see my initial repository and live demo__
+## 0.Setup
 
-### Repo
+- Start a repo.
+- Study (and possibly modify) the backlog
+- Design a simple wireframe to set guidelines for UI/UX design.
+- Devise a development strategy.
 
-- Generate from Template
-- Write initial, basic README
-- Turn on GitHub Pages
+---
 
-## 1. __
+## 1. Initialize Application
 
-__full user story description__
+**As a user I want to see the home page when I load the site**
 
-### Repo
+- _acceptance criteria_
+- _acceptance criteria_
+- ...
 
-what branch(es) did you work on?
+### REPO
 
-### HTML
+- This user story is developed on branch `_`.
+- This branch is merged to `master` branch after completion.
 
-what did you change in the HTML and why?
+### Task A
 
-### CSS
+### Task B
 
-what did you change in the CSS and why?
+### Task ...
 
-## 2. ...
-
-...
-
-...
-
-## Finishing Touches
-
-- Write final, complete README:
-  - [makeareadme.com](https://www.makeareadme.com/)
-  - [bulldogjob](https://bulldogjob.com/news/449-how-to-write-a-good-readme-for-your-github-project)
-  - [meakaakka](https://medium.com/@meakaakka/a-beginners-guide-to-writing-a-kickass-readme-7ac01da88ab3)
-- Validate code to check for any last mistakes
+---
